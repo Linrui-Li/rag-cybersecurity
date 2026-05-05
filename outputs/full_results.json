@@ -1,0 +1,142 @@
+[
+  {
+    "query": "How should an organization respond to a phishing email?",
+    "answer": " Guideline 1: Immediately isolate the email by not clicking on any links or downloading attachments within it. This action can help prevent potential malware infections and unauthorized access to your system.\n\nGuideline 2: Verify the email's authenticity by contacting the supposed sender through a known, independent method (e.g., phone call or personal email) before taking any action related to the content of the suspicious email.\n\nGuideline 3: Report the phishing attempt to your IT department and relevant authorities such as the Federal Trade Commission (FTC). Sharing this information can help in tracking down the source and preventing future attacks on yourself and others within your organization.",
+    "sources": [
+      "../data/nist_sp800_177r1.pdf p.30",
+      "../data/nist_sp800_177r1.pdf p.34",
+      "../data/nist_sp800_177r1.pdf p.40"
+    ],
+    "retrieved_chunks": [
+      "access to credit cards and bank accounts of the victim etc. Adversaries use a variety of tactics to \nmake the recipient of the email believe that they have received the phishing email from a \nlegitimate user or a legitimate domain, including: \n\u2022 Using a message-From: address that looks very close to one of the legitimate addresses \nthe user is familiar with or from someone claiming to be an authority (IT administrator,",
+      "NIST SP 800-177 REV. 1  TRUSTWORTHY EMAIL \n \n 22 \nThis publication is available free of charge from: https://doi.org/10.6028/NIST.SP.800-177r1 \n \nfor physical harm or for committing \ufb01nancial fraud) is called phishing. From the above \ndiscussion of email bombing attacks, it should be clear that spam can sometimes be a type of \nemail bombing.  \nProtecting the email infrastructure against spam is a challenging problem. \ufffdis is due to the fact",
+      "NIST SP 800-177 REV. 1  TRUSTWORTHY EMAIL \n \n 28 \nThis publication is available free of charge from: https://doi.org/10.6028/NIST.SP.800-177r1 \n \nusers about what the results mean when evaluating potential phishing/spam email as well as not \nassuming positive results means they have a completely secure channel.  \n4.3 Requirements for Using Domain-based Authentication Techniques for Federal \nSystems \nAs of the time of writing of this guidance document, the DHS has called out the use of domain-"
+    ]
+  },
+  {
+    "query": "What technical controls can prevent phishing attacks?",
+    "answer": " Guideline 1: Implement domain-based checks such as SPF, DKIM, and DMARC to verify the authenticity of emails and prevent phishing attacks.\n\nGuideline 2: Design anti-phishing filters that can detect text commonly used in phishing emails, recover hidden text in images, and recognize cursive, hand-written, rotated or distorted texts.\n\nGuideline 3: Incorporate the use of digital signatures (S/MIME or OpenPGP) to authenticate emails and confirm their integrity, making it harder for adversaries to impersonate legitimate users or domains. Additionally, consider enhancing non-repudiation controls by associating identities with actions, reducing the potential for individuals falsely denying having performed certain actions.",
+    "sources": [
+      "../data/nist_sp800_177r1.pdf p.31",
+      "../data/nist_sp800_177r1.pdf p.121",
+      "../data/nist_sp800_177r1.pdf p.30"
+    ],
+    "retrieved_chunks": [
+      "rewards for the perpetrator is greater. \n\ufffde most common countermeasures used against phishing are domain-based checks such as SPF, \nDKIM and DMARC (see Section 4). More elaborate is to design anti-phishing \ufb01lters that can \ndetect text commonly used in phishing emails, recovering hidden text in images, intelligent word \nrecognition \u2013 detecting cursive, hand-written, rotated or distorted texts as well as the ability to",
+      "social engineering attacks using email. This could include looking for and noting the presence of \ndigital signatures (S/MIME or OpenPGP), (see Section 5.3). \n \nAU-10 NON-REPUDIATION  \nControl: The information system protects against an individual (or process acting on behalf of an  \nindividual) falsely denying having performed [Assignment: organization-defined actions to be \ncovered by non-repudiation].  \nControl Enhancements:  \n(1) NON-REPUDIATION | ASSOCIATION OF IDENTIES",
+      "access to credit cards and bank accounts of the victim etc. Adversaries use a variety of tactics to \nmake the recipient of the email believe that they have received the phishing email from a \nlegitimate user or a legitimate domain, including: \n\u2022 Using a message-From: address that looks very close to one of the legitimate addresses \nthe user is familiar with or from someone claiming to be an authority (IT administrator,"
+    ]
+  },
+  {
+    "query": "How can employees identify spear-phishing attempts?",
+    "answer": " Guideline 1: Employees should be vigilant for emails that contain personal or sensitive information, such as credit card details, bank account numbers, or social security numbers, even if they seem to come from a trusted source. Such specific and confidential data are often used in spear-phishing attempts.\n\nGuideline 2: Emails claiming to be from authorities like IT administrators, HR departments, or high-ranking officials should be verified independently before sharing any sensitive information. These positions are commonly impersonated in spear-phishing attacks.\n\nGuideline 3: Employees should pay attention to the email address and message-From field. If the sender's address seems slightly off from what is expected or looks too generic, it could be a sign of a spear-phishing attempt. Always verify the authenticity of the sender by contacting them through known channels if there's any doubt.",
+    "sources": [
+      "../data/nist_sp800_177r1.pdf p.31",
+      "../data/nist_sp800_177r1.pdf p.30",
+      "../data/nist_sp800_177r1.pdf p.31"
+    ],
+    "retrieved_chunks": [
+      "victims. Hence, they will have a generic greeting such as \u201cDear Member\u201d, \u201cDear Customer\u201d etc. \nA variant of phishing is spear phishing where the adversary is aware of, and speci\ufb01c about, the \nvictim\u2019s pro\ufb01le. More than a generic phishing email, a spear phishing email makes use of more \ncontextual information to make users believe that they are interacting with a legitimate source. \nFor example, a spear phishing email may appear to relate to some speci\ufb01c item of personal",
+      "access to credit cards and bank accounts of the victim etc. Adversaries use a variety of tactics to \nmake the recipient of the email believe that they have received the phishing email from a \nlegitimate user or a legitimate domain, including: \n\u2022 Using a message-From: address that looks very close to one of the legitimate addresses \nthe user is familiar with or from someone claiming to be an authority (IT administrator,",
+      "rewards for the perpetrator is greater. \n\ufffde most common countermeasures used against phishing are domain-based checks such as SPF, \nDKIM and DMARC (see Section 4). More elaborate is to design anti-phishing \ufb01lters that can \ndetect text commonly used in phishing emails, recovering hidden text in images, intelligent word \nrecognition \u2013 detecting cursive, hand-written, rotated or distorted texts as well as the ability to"
+    ]
+  },
+  {
+    "query": "What is DMARC and how does it help prevent email spoofing?",
+    "answer": " Guideline 1: Implement DMARC (Domain-based Message Authentication, Reporting & Conformance) to improve email authentication and curb spoo\ufb01ng and phishing. This can be done by adding a DMARC record to your domain's DNS settings.\n\nGuideline 2: Configure the DMARC policy to specify how email receivers should handle emails that fail both SPF (Sender Policy Framework) and DKIM (DomainKeys Identified Mail) authentication checks. This can include marking the message as potentially spoofed, quarantining it, or rejecting it entirely.\n\nGuideline 3: Analyze DMARC aggregate and failure reports regularly to understand the email disposition trends for your domain. Use these reports to refine your policy and ensure that it effectively detects and handles spoofed emails, improving overall email security.",
+    "sources": [
+      "../data/nist_sp800_177r1.pdf p.55",
+      "../data/nist_sp800_177r1.pdf p.37",
+      "../data/nist_sp800_177r1.pdf p.40"
+    ],
+    "retrieved_chunks": [
+      "can verify the authenticity of their email, how the receiver can handle email that fails to verify, \nand the frequency and types of report that receivers should send back. DMARC bene\ufb01ts \nreceivers by removing the guesswork about which security protocols are in use, allowing more \ncertainty in quarantining and rejecting inauthentic mail.  \nTo further improve authentication, DMARC adds a link between the domain of the sender with",
+      "quarantine or reject messages that fail both SPF and DKIM, email receivers then return DMARC \naggregate and/or failure reports of email dispositions to the domain owner, who can review the \nresults and potentially re\ufb01ne the policy. DMARC is described in subsection 4.6. \nWhile DMARC can do a lot to curb spoo\ufb01ng and phishing (Section 3.1.6 above), it does need \ncareful con\ufb01guration. Intermediaries that forward mail have many legitimate reasons to rewrite",
+      "the receiver may mark the message as a potential spoofed email, quarantine it for further \n(possibly administrator) analysis or reject the message, depending on the SPF policy and/or the \npolicy discovered in any associated DMARC record (see subsection 4.5, below) for example.org."
+    ]
+  },
+  {
+    "query": "How should incident response teams handle a phishing-related data breach?",
+    "answer": " Guideline 1: In case of a phishing-related data breach, the incident response team should first contain and isolate the affected systems to prevent further spread of the breach.\n\nGuideline 2: They should then collaborate with organizations like the Anti-Phishing Working Group (APWG) or similar groups mentioned in the guide for sharing information and gaining insights on the phishing techniques used. This can help in developing a more effective response strategy.\n\nGuideline 3: The team should ensure that all incident data related to the breach is securely stored, encrypted, and only accessible to authorized personnel. This includes communications about the incident and any documents related to the investigation.",
+    "sources": [
+      "../data/nist_sp800_61r2.pdf p.72",
+      "../data/nist_sp800_61r2.pdf p.21",
+      "../data/nist_sp800_61r2.pdf p.40"
+    ],
+    "retrieved_chunks": [
+      "COMPUTER SECURITY INCIDENT HANDLING GUIDE \n63 \nAppendix E\u2014Resources \nThe lists below provide examples of resources that may be helpful in establishing and maintaining an \nincident response capability. \nIncident Response Organizations \nOrganization URL \nAnti-Phishing Working Group (APWG) http://www.antiphishing.org/  \nComputer Crime and Intellectual Property Section (CCIPS), U.S. \nDepartment of Justice \nhttp://www.cybercrime.gov/",
+      "\uf03c Other Incident Response Teams. An organization may experience an incident that is similar to ones \nhandled by other teams; proactively sharing information can facilitate more effective and efficient \nincident handling (e.g., providing advance warning, increasing preparedness, developing situational \nawareness). Groups such as the Forum of Incident Response and Security Teams (FIRST)11, the \nGovernment Forum of Incident Response and Security Teams (GFIRST)12, and the Anti-Phishing",
+      "The incident response team should safeguard incident data and restrict access to it because it often \ncontains sensitive information\u2014for example, data on exploited vulnerabilities, recent security breaches, \nand users that may have performed inappropriate actions. For example, only authorized personnel should \nhave access to the incident database. Incident communications (e.g., emails) and documents should be \nencrypted or otherwise protected so that only authorized personnel can read them."
+    ]
+  },
+  {
+    "query": "What are best practices for email authentication in enterprises?",
+    "answer": " Guideline 1: Implement Sender Policy Framework (SPF) to authenticate the sending domain and prevent email spoofing. This helps ensure that only authorized mail servers are allowed to send emails on behalf of the domain.\n\nGuideline 2: Utilize Domain Keys Identified Mail (DKIM) for signing outgoing messages, which provides a method to verify the integrity of the email content and protect it from tampering during transit.\n\nGuideline 3: Enforce Transport Layer Security (TLS) when sending emails using Simple Mail Transfer Protocol (SMTP). TLS encrypts the email traffic, maintaining the confidentiality and privacy of the messages in transit. Additionally, use SMTP over TLS for both incoming and outgoing email communication to ensure a secure email environment.",
+    "sources": [
+      "../data/nist_sp800_177r1.pdf p.3",
+      "../data/nist_sp800_177r1.pdf p.3",
+      "../data/nist_sp800_177r1.pdf p.126"
+    ],
+    "retrieved_chunks": [
+      "associated certi\ufb01cate authentication protocols. Recommendations for email content security \ninclude the encryption and authentication of message content using S/MIME \n(Secure/Multipurpose Internet Mail Extensions) and associated certi\ufb01cate and key distribution \nprotocols. \nKeywords \nEmail; Simple Mail Transfer Protocol (SMTP); Transport Layer Security (TLS); Sender Policy \nFramework (SPF); Domain Keys Identi\ufb01ed Mail (DKIM); Domain based Message",
+      "medium sized organizations. Technologies recommended in support of core Simple Mail \nTransfer Protocol (SMTP) and the Domain Name System (DNS) include mechanisms for \nauthenticating a sending domain: Sender Policy Framework (SPF), Domain Keys Identi\ufb01ed Mail \n(DKIM) and Domain based Message Authentication, Reporting and Conformance (DMARC). \nRecommendations for email transmission security include Transport Layer Security (TLS) and",
+      "systems.  \nJustification: Email systems should deploy security protocols to protect the integrity of email \nmessages and the confidentially of messages in transit.  For integrity protection, email systems \nshould use DKIM (see Section 4.5) and/or S/MIME digital signatures (see Section 5.3) when \nsending messages.  For confidentiality, email systems should use SMTP over TLS (see Section \n5.2).  \n \nSC-23 SESSION AUTHENTICITY"
+    ]
+  },
+  {
+    "query": "How can organizations train employees to recognize phishing?",
+    "answer": " Guideline 1: Conduct regular training sessions to educate employees about common phishing tactics, such as the use of message-From addresses that mimic legitimate addresses or claim to be from authorities. Emphasize the importance of verifying sender's email address and looking for any signs of suspicious activity.\n\nGuideline 2: Instruct employees on how to identify phishing emails by teaching them to look out for poor grammar, misspellings, and generic greetings. Encourage them to be wary of urgent or threatening messages asking for personal information or immediate action.\n\nGuideline 3: Provide real-life examples of phishing attempts during training sessions and encourage employees to report any suspicious emails to the IT department. This will help build a culture of vigilance, ensuring that all employees are aware of their role in protecting the organization's security.",
+    "sources": [
+      "../data/nist_sp800_177r1.pdf p.31",
+      "../data/nist_sp800_177r1.pdf p.30",
+      "../data/nist_sp800_177r1.pdf p.31"
+    ],
+    "retrieved_chunks": [
+      "rewards for the perpetrator is greater. \n\ufffde most common countermeasures used against phishing are domain-based checks such as SPF, \nDKIM and DMARC (see Section 4). More elaborate is to design anti-phishing \ufb01lters that can \ndetect text commonly used in phishing emails, recovering hidden text in images, intelligent word \nrecognition \u2013 detecting cursive, hand-written, rotated or distorted texts as well as the ability to",
+      "access to credit cards and bank accounts of the victim etc. Adversaries use a variety of tactics to \nmake the recipient of the email believe that they have received the phishing email from a \nlegitimate user or a legitimate domain, including: \n\u2022 Using a message-From: address that looks very close to one of the legitimate addresses \nthe user is familiar with or from someone claiming to be an authority (IT administrator,",
+      "importance or a relevant matter at the organization\u2014for instance, discussing payroll \ndiscrepancies or a legal matter. As in phishing, the ultimate motive is the same\u2014to lure the \nrecipient to an adversary-controlled website masquerading as a legitimate website to collect \nsensitive information about the victim or attack the victim\u2019s computer. \n\ufffdere are two minor variations of phishing: clone phishing and whaling. Clone phishing is the"
+    ]
+  },
+  {
+    "query": "What role does SPF play in email security?",
+    "answer": " Guideline 1: Organizations should deploy SPF (Sender Policy Framework) to specify which IP addresses are authorized to send emails on behalf of their domains. This helps prevent email spoofing and protects against phishing attacks.\n\nGuideline 2: Domains that are not used to send email, such as web-only domains, should include an SPF Record with a policy indicating no valid email senders for the given domain.\n\nGuideline 3: When using cloud services or contracted services for email, the enterprise administrator should ensure that any emails sent by these third parties pass SPF checks. This can be achieved by including the IP addresses of the third-party servers in the SPF record of the organization's domain.",
+    "sources": [
+      "../data/nist_sp800_177r1.pdf p.46",
+      "../data/nist_sp800_177r1.pdf p.67",
+      "../data/nist_sp800_177r1.pdf p.45"
+    ],
+    "retrieved_chunks": [
+      "be plug-ins available for a particular Mail User Agent so end users can perform SPF checks even \nif their incoming mail server does not. \nAs mentioned above, SPF uses the envelope-From: address domain-part and the IP address of the \nsender. \ufffdis means that SPF checks can be started before the actual text of the email message is \nreceived. Alternatively, messages can be quickly received and held in quarantine until all the",
+      "and integrity.  \n4.8 Recommendation Summary \nSecurity Recommendation 4-1: Organizations are recommended to deploy SPF to specify \nwhich IP addresses are authorized to transmit email on behalf of the domain. Domains controlled \nby an organization that are not used to send email, for example Web only domains, should \ninclude an SPF RR with the policy indicating that there are no valid email senders for the given \ndomain.",
+      "made, tested, and con\ufb01rmed to be correct. \n4.4.4 Considerations for SPF when Using Cloud Services or Contracted Services \nWhen an organization outsources its email service (whole or part) to a third party such as a cloud \nprovider or contracted email service, that organization needs to make sure any email sent by \nthose third parties will pass SPF checks. To do this, the enterprise administrator should include"
+    ]
+  },
+  {
+    "query": "How should a mid-sized enterprise handle a ransomware attack initiated by phishing?",
+    "answer": " Guideline 1: In the event of a ransomware attack initiated by phishing, an incident response team in a mid-sized enterprise should first isolate all potentially infected systems to prevent further spread. This can be done by disconnecting them from the network and any external devices.\n\nGuideline 2: The enterprise should then utilize tools provided by Incident Response Organizations such as the Anti-Phishing Working Group (APWG) or the Computer Crime and Intellectual Property Section (CCIPS), U.S. Department of Justice, to identify all infected hosts and understand the nature of the attack.\n\nGuideline 3: To prevent such attacks from entering the organization before antivirus signatures are released, the enterprise should implement a multi-layered defense strategy that includes email filtering, user awareness training, and regularly updated antivirus software. Additionally, it's crucial to maintain strong backups of critical data offline, as this can help in restoring systems without needing to pay the ransom.",
+    "sources": [
+      "../data/nist_sp800_61r2.pdf p.72",
+      "../data/nist_sp800_61r2.pdf p.63",
+      "../data/nist_sp800_177r1.pdf p.30"
+    ],
+    "retrieved_chunks": [
+      "COMPUTER SECURITY INCIDENT HANDLING GUIDE \n63 \nAppendix E\u2014Resources \nThe lists below provide examples of resources that may be helpful in establishing and maintaining an \nincident response capability. \nIncident Response Organizations \nOrganization URL \nAnti-Phishing Working Group (APWG) http://www.antiphishing.org/  \nComputer Crime and Intellectual Property Section (CCIPS), U.S. \nDepartment of Justice \nhttp://www.cybercrime.gov/",
+      "COMPUTER SECURITY INCIDENT HANDLING GUIDE \n54 \norganization has already incurred widespread infections before antivirus signatures become available \nseveral hours after the worm started to spread. \nThe following are additional questions for this scenario: \n1. How would the incident response team identify all infected hosts? \n2. How would the organization attempt to prevent the worm from entering the organization before \nantivirus signatures were released?",
+      "access to credit cards and bank accounts of the victim etc. Adversaries use a variety of tactics to \nmake the recipient of the email believe that they have received the phishing email from a \nlegitimate user or a legitimate domain, including: \n\u2022 Using a message-From: address that looks very close to one of the legitimate addresses \nthe user is familiar with or from someone claiming to be an authority (IT administrator,"
+    ]
+  },
+  {
+    "query": "What are the indicators of compromise in a phishing attack?",
+    "answer": " Guideline 1: Analyze email sender addresses for inconsistencies or close resemblance to legitimate addresses, especially if they claim to be from an authority such as an IT administrator.\n\nGuideline 2: Inspect the sign-in page, logos, and graphics of websites linked in emails for identical reproductions of legitimate websites, indicating an adversary-controlled website designed to create trust.\n\nGuideline 3: Implement anti-phishing filters capable of detecting text commonly used in phishing emails, recovering hidden text in images, and recognizing cursive, hand-written, rotated, or distorted texts to combat phishing attempts.",
+    "sources": [
+      "../data/nist_sp800_177r1.pdf p.30",
+      "../data/nist_sp800_177r1.pdf p.31",
+      "../data/nist_sp800_177r1.pdf p.31"
+    ],
+    "retrieved_chunks": [
+      "access to credit cards and bank accounts of the victim etc. Adversaries use a variety of tactics to \nmake the recipient of the email believe that they have received the phishing email from a \nlegitimate user or a legitimate domain, including: \n\u2022 Using a message-From: address that looks very close to one of the legitimate addresses \nthe user is familiar with or from someone claiming to be an authority (IT administrator,",
+      "rewards for the perpetrator is greater. \n\ufffde most common countermeasures used against phishing are domain-based checks such as SPF, \nDKIM and DMARC (see Section 4). More elaborate is to design anti-phishing \ufb01lters that can \ndetect text commonly used in phishing emails, recovering hidden text in images, intelligent word \nrecognition \u2013 detecting cursive, hand-written, rotated or distorted texts as well as the ability to",
+      "\ufb01nds that the sign-in page, logos and graphics are identical to the legitimate website in the \nadversary-controlled website, thereby creating the trust necessary to make the recipient submit \nthe required information such as user ID and the password. Some attackers use web pages to \ndeliver malware directly to the victim\u2019s web browser. \nIn many instances, the phishing emails are generated in thousands without focus on pro\ufb01le of the"
+    ]
+  }
+]
